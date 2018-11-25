@@ -94,21 +94,21 @@ public class Asteroids extends JFrame implements ActionListener{
        * move the object left by subtracting an integer from the x coordinate of the object
        * if the x = 0, keep it at 0(dont let it move any further)
        */
-      if(key == e.VK_LEFT){
+      if(key == KeyEvent.VK_LEFT){
         if(object.x <= 0)
           object.x = 0;
         else
           object.x = object.x - objectSpeedX; 
       }
       
-      if(key == e.VK_RIGHT){
+      if(key == KeyEvent.VK_RIGHT){
         if(object.x >= windowSizeX - objectWidth)
           object.x = windowSizeX - objectWidth;
         else
           object.x = object.x + objectSpeedX;
       }
       
-      if(key == e.VK_UP){
+      if(key == KeyEvent.VK_UP){
         upPressed = true;
         if(object.y <= 0)
           object.y = 0+objectHeight;
@@ -116,7 +116,7 @@ public class Asteroids extends JFrame implements ActionListener{
           object.y = object.y - objectSpeedY;
       }
       
-      if(key == e.VK_DOWN){
+      if(key == KeyEvent.VK_DOWN){
         if(object.y >= windowSizeY - objectHeight)
           object.y = windowSizeY - objectHeight;
         else
@@ -124,7 +124,7 @@ public class Asteroids extends JFrame implements ActionListener{
       }
       
       //if user presses space, creates a bullet object
-      if(key == e.VK_SPACE){
+      if(key == KeyEvent.VK_SPACE){
         if (Bullet.canShoot = true){
           Bullet.canShoot = false;
           Bullet.bullet = new Rectangle(object.x + object.width/2, object.y - object.height, 4, 12);
@@ -157,13 +157,13 @@ public class Asteroids extends JFrame implements ActionListener{
     
     //load images
     
-    ImageIcon i = new ImageIcon("E:/Compture Science/JavaGame V2/Sprites/AsteroidsAnimate.jpg");
+    ImageIcon i = new ImageIcon("./Sprites/AsteroidsAnimate.jpg");
     background = i.getImage();
-    ImageIcon ship = new ImageIcon("E:/Compture Science/JavaGame V2/Sprites/ship.gif");
+    ImageIcon ship = new ImageIcon("./Sprites/ship.gif");
     spaceShip = ship.getImage();
-    ImageIcon kaboom = new ImageIcon("E:/Compture Science/JavaGame V2/Sprites/Asteroid (2).png");
+    ImageIcon kaboom = new ImageIcon("./Sprites/Asteroid (2).png");
     asteroid = kaboom.getImage();
-    ImageIcon pickup = new ImageIcon("E:/Compture Science/JavaGame V2/Sprites/ship.gif");
+    ImageIcon pickup = new ImageIcon("./Sprites/ship.gif");
     powerup = pickup.getImage();
     
     //create the timer object (which goes off every 10 miliseconds and in this class)
