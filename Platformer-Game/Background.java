@@ -16,7 +16,7 @@ public class Background extends MyObject{
   final int SPEED = 8;
   int velX = 0;
   
-  final static String imageLocation = "Other Things/background0.png";
+  final static String imageLocation = "Sprites/background0.png";
   Rectangle b1;
   Rectangle b2;
   

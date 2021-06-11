@@ -23,7 +23,7 @@ public class Player extends Character {
   final static int SPEED = 10;
   final static int MAXSPEED = 6;
   
-  final static String imageLocation = "Other Things/background0.png";
+  final static String imageLocation = "Sprites/background0.png";
   final static String spritesheet = "Sprites/marioSpriteSheetWorks.png";
   final static String id = "Player";
   
