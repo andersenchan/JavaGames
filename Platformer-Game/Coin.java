@@ -1,11 +1,3 @@
-/* Coin.java
-   by Andy Chan
-   Date Started: December 14 2014
-   Date Last Updated: January 9 2015
-   Purpose:
-   Status: good enough
-*/
-
 import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Font;
@@ -16,8 +8,6 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 public class Coin extends MyObject {
-
-  /* declare variables */
   
   final static int WIDTH = 32;
   final static int HEIGHT = 32;
