@@ -35,7 +35,9 @@ public class Game extends JFrame implements ActionListener{
   static int windowY = 900;
   
   //location of the levels
-  final String[] levels = {"Sprites/TestLevel4.png"};
+  final String[] levels = {"Sprites/TestLevel2.png",
+                           "Sprites/TestLevel4.png",
+                           "Sprites/TestLevel3.png"};
   
   //Music file locations
   final String endLevelMusic = "Sound Files/musicLevelEnd.midi";
